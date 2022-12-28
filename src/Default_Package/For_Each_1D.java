@@ -1,7 +1,7 @@
 package Default_Package;
 import java.util.*;
 
-public class For_Each {
+public class For_Each_1D {
 
 	public static void main(String[] args) {
 		Scanner ip = new Scanner(System.in);
