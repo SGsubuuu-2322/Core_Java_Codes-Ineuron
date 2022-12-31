@@ -1,19 +1,20 @@
-package Default_Package;
+package Sorting;
 import java.util.*;
 
-public class SelectionSort {
+public class Selection_Sort {
 	
 	public static void selectionSort(int[] arr){
 		for(int i = 0; i < arr.length; i++){
-			int min = i; 
+			int small = i;
 			for(int j = i+1; j < arr.length; j++){
-				if(arr[j] < arr[min]){
-					min = j;
+				if(arr[small] > arr[j]){
+					small = j;
 				}
 			}
-			int temp = arr[min];
-			arr[min] = arr[i];
-			arr[i] = temp;
+			int temp = arr[i];
+			arr[i] = arr[small];
+			arr[small] = temp;
+			
 		}
 	}
 	
@@ -42,7 +43,7 @@ public class SelectionSort {
 	}
 
 	public static void main(String[] args) {
-		Scanner ip = new Scanner(System.in);
+		Scanner ip  = new Scanner(System.in);
 		System.out.println("This is the program for sorting your entered array through Selection-Sort technique...");
 		int[] arr = inputArray(ip);
 		System.out.println("This is your array as you'hv entered in unsorted manner :- ");

@@ -1,21 +1,12 @@
-package Default_Package;
+package Sorting;
 import java.util.*;
 
-public class SelectionSort {
+public class Insertion_Sort {
 	
-	public static void selectionSort(int[] arr){
-		for(int i = 0; i < arr.length; i++){
-			int min = i; 
-			for(int j = i+1; j < arr.length; j++){
-				if(arr[j] < arr[min]){
-					min = j;
-				}
-			}
-			int temp = arr[min];
-			arr[min] = arr[i];
-			arr[i] = temp;
-		}
+	public static void InsertionSort(int[] arr) {
+		
 	}
+	
 	
 	public static int[] inputArray(Scanner ip){
 		System.out.println("So, enter the length of the array you want to create :- ");
@@ -48,7 +39,7 @@ public class SelectionSort {
 		System.out.println("This is your array as you'hv entered in unsorted manner :- ");
 		printArray(arr);
 		System.out.println("This is your array after using Bubble Sort technique on your array :- ");
-		selectionSort(arr);
+		InsertionSort(arr);
 		printArray(arr);
 
 	}
