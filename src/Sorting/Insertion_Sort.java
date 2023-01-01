@@ -4,7 +4,19 @@ import java.util.*;
 public class Insertion_Sort {
 	
 	public static void InsertionSort(int[] arr) {
-		
+		for(int i = 1; i < arr.length; i++){
+			int temp = arr[i];
+			int j = 0;
+			for(j = i-1; j >= 0; j--){
+				if(temp < arr[j]){
+					arr[j+1] = arr[j];
+				}
+				else{
+					break;
+				}
+			}
+			arr[j+1] = temp;
+		}
 	}
 	
 	
@@ -34,11 +46,11 @@ public class Insertion_Sort {
 
 	public static void main(String[] args) {
 		Scanner ip = new Scanner(System.in);
-		System.out.println("This is the program for sorting your entered array through Selection-Sort technique...");
+		System.out.println("This is the program for sorting your entered array through Insertion-Sort technique...");
 		int[] arr = inputArray(ip);
 		System.out.println("This is your array as you'hv entered in unsorted manner :- ");
 		printArray(arr);
-		System.out.println("This is your array after using Bubble Sort technique on your array :- ");
+		System.out.println("This is your array after using Insertion Sort technique on your array :- ");
 		InsertionSort(arr);
 		printArray(arr);
 

@@ -48,7 +48,7 @@ public class Selection_Sort {
 		int[] arr = inputArray(ip);
 		System.out.println("This is your array as you'hv entered in unsorted manner :- ");
 		printArray(arr);
-		System.out.println("This is your array after using Bubble Sort technique on your array :- ");
+		System.out.println("This is your array after using Selection Sort technique on your array :- ");
 		selectionSort(arr);
 		printArray(arr);
 
