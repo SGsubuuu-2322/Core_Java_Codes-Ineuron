@@ -20,10 +20,14 @@ public class Reverse_A_String {
 		}
 		System.out.println(str1);
 		
-		int temp = str.length()-1;
+		int temp = str.length();
 		for(int i = str.length()-1; i >= 0; i--){
-			if(str.charAt(i) == ' ' || i == 0){
-				System.out.print(str.substring(i, temp+1) + " ");
+			if(str.charAt(i) == ' '){
+				System.out.print(str.substring(i+1, temp) + " ");
+				temp = i;
+			}
+			else if(i == 0){
+				System.out.print(str.substring(i, temp) + " ");
 				temp = i;
 			}
 		}
@@ -33,8 +37,7 @@ public class Reverse_A_String {
 		String str2 = "";
 		String[] st = str.split(" ");
 		for(int i = st.length-1; i >= 0; i--){
-			System.out.print(st[i]);
-			System.out.print(" ");
+			System.out.print(st[i] + " ");
 		}
 
 	}
