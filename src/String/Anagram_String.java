@@ -8,8 +8,18 @@ public class Anagram_String {
 		System.out.println("This is the program for checking your entered two strings are anagram or not...");
 		System.out.println("So, enter your 1st string :- ");
 		String str1 = ip.nextLine();
+		str1 = str1.toLowerCase();
 		System.out.println("Now, enter your 2nd string :- ");
 		String str2 = ip.nextLine();
+		str2 = str2.toLowerCase();
+		
+//		char[] arr = str2.toCharArray();
+//		Arrays.sort(arr);
+//		for(int i = 0; i < arr.length; i++)
+//			System.out.print(arr[i]);
+//		System.out.println();
+		
+		
 		int check1 = 1;
 		for(int i = 0; i < str1.length(); i++){
 			char temp = str1.charAt(i);
@@ -21,6 +31,7 @@ public class Anagram_String {
 				}
 			}
 			if(check2 == 1){
+				check2 = -1;
 				continue;
 			}
 			else{
