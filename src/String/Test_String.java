@@ -9,7 +9,7 @@ public class Test_String {
 		
 		int[] arr = {12,23,43,53,4,65,67};
 		for(int elem:arr)
-			System.out.println(elem);
+			System.out.println(elem + " Hullululu");
 	}
 
 }
