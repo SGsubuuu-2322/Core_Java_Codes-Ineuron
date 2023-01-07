@@ -5,7 +5,7 @@ import java.util.*;
 class Object{
 	public static int count;
 	
-	public Object() {
+	public Object(){
 		count++;
 	}
 }
