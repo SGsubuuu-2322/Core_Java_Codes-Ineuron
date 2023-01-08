@@ -50,6 +50,7 @@ public class Inheritance_4 {
 		System.out.println();
 		ch = new Childd(1000, 2000);
 		ch.disPlay();
+		
 
 	}
 
