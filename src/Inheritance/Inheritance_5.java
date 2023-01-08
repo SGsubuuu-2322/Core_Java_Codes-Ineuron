@@ -50,6 +50,7 @@ public class Inheritance_5 {
 		pp.fly();
 		pp.landing();
 		pp.carryPassanger();
+		
 
 	}
 
