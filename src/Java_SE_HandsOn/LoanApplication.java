@@ -5,11 +5,13 @@ class Farmer{
 	private String name;
 	private long pA;
 	private double dR;
-	private final double rI = 3.5;
+	private final static double rI;
 	Scanner ip = new Scanner(System.in);
 	double sI;
 	
-	
+	static {
+		rI = 2.7;
+	}
 	
 	public void inputData(){
 		System.out.println("So, kindly enter your name :- ");
