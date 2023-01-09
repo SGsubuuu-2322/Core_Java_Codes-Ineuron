@@ -65,6 +65,16 @@ public class Customer {
 					}
 					else if(choice == 2){
 						Educational_Loan el = new Educational_Loan();
+						boolean chec = el.checkEligibility(age);
+						if(chec == true){
+							el.disPlay(chec, fullName);
+						}
+						else{
+							el.disPlay(chec, fullName);
+							break;
+						}
+						el.checkSancetionedAmount();
+						break;
 					}
 					else if(choice == 3){
 						Home_Loan hl = new Home_Loan();

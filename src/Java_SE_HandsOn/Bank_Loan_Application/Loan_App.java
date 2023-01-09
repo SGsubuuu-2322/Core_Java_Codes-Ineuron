@@ -18,10 +18,10 @@ public class Loan_App {
 	
 	public void disPlay(boolean res, String name){
 		if(res == true){
-			System.out.println("Mr/Mrs." + name + "Congratulaions!!! You're perfectly eligible for this loan service :):):) ");
+			System.out.println("Congratulaions!!!" + " Mr/Mrs." + name + " You're perfectly eligible for this loan :):):) ");
 		}
 		else {
-			System.out.println("Mr/Mrs." + name + " Sorry!!! you're not eligible for this service(:(:(:Better Luck Next Time(:(:(:");
+			System.out.println("Congratulaions!!!" + " Mr/Mrs." + name + " You're perfectly eligible for this loan :):):) ");
 		}
 	}
     public void checkSancetionedAmount(){
