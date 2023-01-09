@@ -31,7 +31,7 @@ class Farmer{
 	}
 }
 
-public class LoanApplication {
+public class Farmer_Loan_Application {
 
 	public static void main(String[] args) {
 		Scanner ip = new Scanner(System.in);
