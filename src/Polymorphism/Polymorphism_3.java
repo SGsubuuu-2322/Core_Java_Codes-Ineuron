@@ -20,7 +20,7 @@ class Child2211 extends Parent1{
 		System.out.println("Child2 cries at high voice...");
 	}
 	public void laugh(){
-		System.out.println("Child1 laughs at low voice...");
+		System.out.println("Child1 laughs at high voice...");
 	}
 }
 
@@ -28,6 +28,7 @@ class ParentChild{
 	public void access(Parent1 parent){
 		parent.cry();
 //		parent.laugh();
+//		((Child1122) parent).laugh();
 	}
 }
 

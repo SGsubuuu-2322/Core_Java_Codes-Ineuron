@@ -48,7 +48,7 @@ public class Educational_Loan extends Loan_App{
 		if((ch == 'G' || ch == 'g') && (perc10 <= 80 && perc12 <= 70) && (distance <= 25) ){
 			sanctionAmt = 1000000;
 		}
-		else if((ch == 'G' || ch == 'g') && (perc10 > 90 && perc12 <= 80) && (distance <= 25) ){
+		else if((ch == 'G' || ch == 'g') && (perc10 < 90 && perc12 <= 80) && (distance <= 25) ){
 			sanctionAmt = 2000000;
 		}
 		else{
@@ -61,7 +61,7 @@ public class Educational_Loan extends Loan_App{
 		if((ch == 'P' || ch == 'p') && (perc10 <= 85 && perc12 <= 75) && (distance <= 25) ){
 			sanctionAmt = 2000000;
 		}
-		else if((ch == 'P' || ch == 'P') && (perc10 > 95 && perc12 <= 85) && (distance <= 25) ){
+		else if((ch == 'P' || ch == 'P') && (perc10 < 95 && perc12 <= 85) && (distance <= 25) ){
 			sanctionAmt = 4000000;
 		}
 		else{

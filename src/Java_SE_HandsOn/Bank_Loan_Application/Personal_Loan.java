@@ -55,13 +55,13 @@ public class Personal_Loan extends Loan_App{
 	}
 	
 	public long forPrivtEmp(){
-		if((ch == 'G' || ch == 'g') && (salary >= 450000 && salary <= 1000000) && (distance <= 15) ){
+		if((ch == 'P' || ch == 'p') && (salary >= 450000 && salary <= 1000000) && (distance <= 15) ){
 			sanctionAmt = 2500000;
 		}
-		else if((ch == 'G' || ch == 'g') && (salary > 1000000 && salary <= 5000000) && (distance <= 15) ){
+		else if((ch == 'P' || ch == 'p') && (salary > 1000000 && salary <= 5000000) && (distance <= 15) ){
 			sanctionAmt = 5000000;
 		}
-		else if((ch == 'G' || ch == 'g') && (salary > 5000000 && salary <= 10000000) && (distance <= 15) ){
+		else if((ch == 'P' || ch == 'p') && (salary > 5000000 && salary <= 10000000) && (distance <= 15) ){
 			sanctionAmt = 10000000;
 		}
 		else{

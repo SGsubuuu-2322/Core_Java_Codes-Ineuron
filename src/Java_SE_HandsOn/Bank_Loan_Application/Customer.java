@@ -10,6 +10,7 @@ public class Customer {
 	private static String fullName;
 	private static int age;
 	private static int choice;
+	private static  long desiredAmount;
 	
 	public static void inputData(){
 		System.out.println("Enter your First-Name :- ");
@@ -61,6 +62,31 @@ public class Customer {
 							break;
 						}
 						pl.checkSancetionedAmount();
+						while(true){
+							System.out.println("So, dear Sir/Madam how much amount from your sanctioned money you want to get sanctioned :- ");
+							desiredAmount = ip.nextLong();
+							System.out.println("Now, PRESS '1' for using our loan calculator for analysing your loan.\nOtherwise, PRESS '-1' to get connect with our bank executive \nfor this concern or PRESS any digit to stop the process from here :- ");
+							int cho = ip.nextInt();
+							if(cho == 1){
+								pl.loanCalculator(desiredAmount, 1);
+								System.out.println("So, if you want to use again this service just PRESS - '1' otherwise, PRESS any digit to get transactioned your money");
+								int c = ip.nextInt();
+								if(c == 1){
+									continue;
+								}
+								else{
+									System.out.println("Now, just get relaxed!!!  because your desired amount will get transferred soon in your desired bank account \nin just a few clicks...");
+									break;
+								}
+								
+							}
+							else if(cho == -1){
+								System.out.println("Now, sit in a isolated position to get more clarity about your loan from our executive and \nthen your desired amount will be transferred soon in your desired bank account in just a few clicks...");
+								break;
+							}else{
+								break;
+							}
+						}
 						break;
 					}
 					else if(choice == 2){
@@ -74,13 +100,108 @@ public class Customer {
 							break;
 						}
 						el.checkSancetionedAmount();
+						while(true){
+							System.out.println("So, dear Sir/Madam how much amount from your sanctioned money you want to get sanctioned :- ");
+							desiredAmount = ip.nextLong();
+							System.out.println("Now, PRESS '1' for using our loan calculator for analysing your loan.\nOtherwise, PRESS '-1' to get connect with our bank executive\nfor this concern or PRESS any digit to stop the process from here :- ");
+							int cho = ip.nextInt();
+							if(cho == 1){
+								el.loanCalculator(desiredAmount, 2);
+								System.out.println("So, if you want to use again this service just PRESS - '1' otherwise, PRESS any digit to get transactioned your money");
+								int c = ip.nextInt();
+								if(c == 1){
+									continue;
+								}
+								else{
+									System.out.println("Now, just get relaxed!!!  because your desired amount will get transferred soon in your desired bank account in just a few clicks...");
+									break;
+								}
+								
+							}
+							else if(cho == -1){
+								System.out.println("Now, sit in a isolated position to get more clarity about your loan from our\nexecutive and then your desired amount will be transferred soon in your desired\nbank account in just a few clicks...");
+								break;
+							}else{
+								break;
+							}
+						}
 						break;
 					}
 					else if(choice == 3){
 						Home_Loan hl = new Home_Loan();
+						boolean chec = hl.checkEligibility(age);
+						if(chec == true){
+							hl.disPlay(chec, fullName);
+						}
+						else{
+							hl.disPlay(chec, fullName);
+							break;
+						}
+						hl.checkSancetionedAmount();
+						while(true){
+							System.out.println("So, dear Sir/Madam how much amount from your sanctioned money you want to get sanctioned :- ");
+							desiredAmount = ip.nextLong();
+							System.out.println("Now, PRESS '1' for using our loan calculator for analysing your loan.\nOtherwise, PRESS '-1' to get connect with our bank executive for this concern or PRESS any digit to stop the process from here :- ");
+							int cho = ip.nextInt();
+							if(cho == 1){
+								hl.loanCalculator(desiredAmount, 3);
+								System.out.println("So, if you want to use again this service just PRESS - '1' otherwise, PRESS any digit to get transactioned your money");
+								int c = ip.nextInt();
+								if(c == 1){
+									continue;
+								}
+								else{
+									System.out.println("Now, just get relaxed!!!  because your desired amount will get transferred soon in your desired bank account in just a few clicks...");
+									break;
+								}
+								
+							}
+							else if(cho == -1){
+								System.out.println("Now, sit in a isolated position to get more clarity about your loan from our executive and then your desired amount will be transferred soon in your desired bank account in just a few clicks...");
+								break;
+							}else{
+								break;
+							}
+						}
+						break;
 					}
 					else if(choice == 4){
 						Car_Loan cl = new Car_Loan();
+						boolean chec = cl.checkEligibility(age);
+						if(chec == true){
+							cl.disPlay(chec, fullName);
+						}
+						else{
+							cl.disPlay(chec, fullName);
+							break;
+						}
+						cl.checkSancetionedAmount();
+						while(true){
+							System.out.println("So, dear Sir/Madam how much amount from your sanctioned money you want to get sanctioned :- ");
+							desiredAmount = ip.nextLong();
+							System.out.println("Now, PRESS '1' for using our loan calculator for analysing your loan.\nOtherwise, PRESS '-1' to get connect with our bank executive\nfor this concern or PRESS any digit to stop the process from here :- ");
+							int cho = ip.nextInt();
+							if(cho == 1){
+								cl.loanCalculator(desiredAmount, 4);
+								System.out.println("So, if you want to use again this service just PRESS - '1' otherwise, PRESS any digit to get transactioned your money");
+								int c = ip.nextInt();
+								if(c == 1){
+									continue;
+								}
+								else{
+									System.out.println("Now, just get relaxed!!!  because your desired amount will get transferred soon in your desired bank account in just a few clicks...");
+									break;
+								}
+								
+							}
+							else if(cho == -1){
+								System.out.println("Now, sit in a isolated position to get more clarity about your loan from our executive and then your desired amount will be transferred soon in your desired\nbank account in just a few clicks...");
+								break;
+							}else{
+								break;
+							}
+						}
+						break;
 					}
 					else{
 						System.out.println("You'hv entered Invalid input for choices...");
