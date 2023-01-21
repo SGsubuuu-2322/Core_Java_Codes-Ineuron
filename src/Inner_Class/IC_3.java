@@ -11,7 +11,12 @@ class AA{
 public class IC_3{
 
 	public static void main(String[] args) {
-		AA aa = new AA() {
+		
+		
+		
+//		Anonymous Inner Class...
+		AA aa = new AA()   
+		{
 			public void disPlay(){
 				System.out.println("Halalala...");
 			}
