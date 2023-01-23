@@ -7,6 +7,7 @@ interface ISample{
 
 abstract class SampleImpl implements ISample{
 	
+	@Override
 	public void metHod1(){
 		System.out.println("This is 1st method from Interface ISample...");
 	}
@@ -14,6 +15,8 @@ abstract class SampleImpl implements ISample{
 }
 
 class AnSampleImpl extends SampleImpl{
+	
+	@Override
 	public void metHod2(){
 		System.out.println("This is 2nd method from Interface ISample...");
 	}
@@ -22,7 +25,7 @@ class AnSampleImpl extends SampleImpl{
 public class IF_1 {
 
 	public static void main(String[] args) {
-		AnSampleImpl as = new AnSampleImpl();
+		ISample as = new AnSampleImpl();
 		as.metHod1();
 		as.metHod2();
 
