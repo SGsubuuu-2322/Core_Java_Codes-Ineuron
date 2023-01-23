@@ -7,6 +7,7 @@ interface IInterface{
 
 public class InterfaceImpl  implements IInterface{
 	
+	@Override
 	public void disPlay(){
 		System.out.println("Hellooo World!!!");
 	}
