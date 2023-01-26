@@ -10,6 +10,15 @@ public class WC3 {
 		System.out.println(i.longValue());
 		System.out.println(i.floatValue());
 		System.out.println(i.doubleValue());
+		
+		Character ch = new Character('g');
+		Boolean bn = new Boolean("true");
+		
+		System.out.println(ch.charValue());
+		System.out.println(bn.booleanValue());
+		
+//		System.out.println(ch.byteValue());
+//		System.out.println(bn.byteValue());
 
 	}
 
