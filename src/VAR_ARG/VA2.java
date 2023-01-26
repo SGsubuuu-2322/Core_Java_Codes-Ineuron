@@ -8,13 +8,14 @@ public class VA2 {
 		for(int vin : in){
 				sum += vin;
 		}
-		System.out.println(sum);
+		System.out.println("Total Sum : " + sum);
 		System.out.println();
 	}
 
 	public static void main(String[] args) {
 		
 		VA2 va2 = new VA2();
+		va2.add();
 		va2.add(12, 32);
 		va2.add(12, 21, 23, 32);
 		
