@@ -14,6 +14,8 @@ public class WC4 {
 		double d1 = Double.parseDouble("23.354500352");
 		System.out.println(d1);
 		
+		System.out.println(args[0] + args[1]);		
+//		System.out.println(Integer.parseInt(args[0]) + Integer.parseInt(args[1]));		
 
 	}
 
