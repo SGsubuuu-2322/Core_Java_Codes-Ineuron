@@ -3,6 +3,10 @@ package Wrapper_Class;
 public class WC2 {
 
 	public static void main(String[] args) {
+		
+		
+//		valueOf() => Converts String/Primitive to wrapper class...
+		
 		Integer in1 = Integer.valueOf("100", 2);
 		System.out.println(in1);
 		System.out.println("MAX_RADIX = " + Character.MAX_RADIX);

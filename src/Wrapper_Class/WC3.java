@@ -3,6 +3,9 @@ package Wrapper_Class;
 public class WC3 {
 
 	public static void main(String[] args) {
+		
+//		xxxValue()  =>  Converts wrapper type object primitive type...
+		
 		Integer i = new Integer(130);
 		System.out.println(i.byteValue());
 		System.out.println(i.shortValue());
