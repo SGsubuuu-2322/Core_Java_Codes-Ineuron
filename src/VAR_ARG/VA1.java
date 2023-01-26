@@ -4,6 +4,8 @@ public class VA1 {
 	
 	public void met1(int... arg){
 		System.out.println("Var-Args Approach...");
+		System.out.println(arg);
+		
 	}
 	
 	public static void main(String[] args){
