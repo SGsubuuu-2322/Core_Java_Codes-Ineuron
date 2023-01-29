@@ -19,10 +19,13 @@ class Student{
 
 public class RCP1 {
 
-	public static void main(String[] args)throws ClassNotFoundException {
+	public static void main(String[] args)throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		
 		String className = args[0];
 		Class c = Class.forName(className);
+		Object obj = c.newInstance();
+		Student std = (Student)obj;
+		System.out.println(std);
 
 	}
 
