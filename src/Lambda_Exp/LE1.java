@@ -1,5 +1,7 @@
 package Lambda_Exp;
 
+
+@FunctionalInterface
 interface SampleI{
 	void diSp();
 }

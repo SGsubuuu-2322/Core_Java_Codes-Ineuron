@@ -1,5 +1,6 @@
 package Lambda_Exp;
 
+@FunctionalInterface
 interface SamplI{
 	void disPlay();
 }
