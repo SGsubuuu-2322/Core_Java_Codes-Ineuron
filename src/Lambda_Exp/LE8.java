@@ -8,7 +8,7 @@ public class LE8 {
 
 	public static void main(String[] args) {
 		
-		StringPassI spi1 = (s1)-> s1 + " SGsubu";
+		StringPassI spi1 = s1-> s1 + " SGsubu";
 		StringPassI spi2 = (s2)-> s2 + " GSgituuu";
 		
 		perFormance("Hello", spi1);
