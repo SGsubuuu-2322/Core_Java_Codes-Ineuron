@@ -13,8 +13,8 @@ class Atm{
 	Integer customerId = 232214;
 	Integer accountPwd = 2322;
 	
-	Integer cId;
-	Integer aPwd;
+	int  cId;
+	int aPwd;
 	
 	public void dataInput(){
 		Scanner ip = new Scanner(System.in);
