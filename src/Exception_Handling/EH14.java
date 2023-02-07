@@ -1,6 +1,6 @@
 package Exception_Handling;
 
-class AlphA{
+class AlphA1{
 	
 	public void metalpha(){
 		
@@ -36,7 +36,7 @@ class AlphA{
 public class EH14 {
 
 	public static void main(String[] args) {
-		AlphA aa = new AlphA();
+		AlphA1 aa = new AlphA1();
 		aa.metalpha();
 
 	}

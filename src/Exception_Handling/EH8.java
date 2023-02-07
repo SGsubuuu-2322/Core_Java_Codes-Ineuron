@@ -2,7 +2,7 @@ package Exception_Handling;
 
 import java.util.Scanner;
 
-class Alpha{
+class Alpha_1{
 	
 	public void alpha() {
 		try
@@ -26,7 +26,7 @@ public class EH8 {
 	public static void main(String[] args) {
 		System.out.println("Program Starts Normally...");
 		try {
-			Alpha eh = new Alpha();
+			Alpha_1 eh = new Alpha_1();
 			eh.alpha();
 		}catch(ArithmeticException ae){
 			System.out.println("Exception handled by main method ...");
