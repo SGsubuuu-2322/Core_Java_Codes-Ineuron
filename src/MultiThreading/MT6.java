@@ -21,7 +21,7 @@ public class MT6 {
 		ThreadClass tc = new ThreadClass();
 		tc.start();
 		
-		tc.join(1000);
+		tc.join(1000, 10);
 		
 		for(int i = 0; i < 6; i++) {
 			System.out.println("Rama Thread...");
