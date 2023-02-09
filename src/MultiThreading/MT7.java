@@ -8,7 +8,7 @@ class ThreadClassI extends Thread{
 	public void run(){
 		
 		try {
-			th.join();
+			th.join(1000);
 		}catch(InterruptedException ie){
 			
 		}
@@ -28,8 +28,8 @@ public class MT7 {
 		tci.start();
 		
 		for(int i = 0; i < 6; i++){
-			Thread.sleep(2000);
 			System.out.println("Main Thread...");
+			Thread.sleep(2000);
 		}
 
 	}
