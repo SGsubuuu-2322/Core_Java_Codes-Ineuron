@@ -16,7 +16,7 @@ class ThreadClass extends Thread{
 
 public class MT6 {
 
-	public static void main(String[] args)throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 		
 		ThreadClass tc = new ThreadClass();
 		tc.start();

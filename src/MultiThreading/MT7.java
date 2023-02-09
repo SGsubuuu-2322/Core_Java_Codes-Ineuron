@@ -5,7 +5,7 @@ class ThreadClassI extends Thread{
 	static Thread th;
 	
 	@Override
-	public void run(){
+	public void run() {
 		
 		try {
 			th.join(1000);
@@ -21,11 +21,12 @@ class ThreadClassI extends Thread{
 
 public class MT7 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException  {
 		ThreadClassI.th = Thread.currentThread();
 		
 		ThreadClassI tci = new ThreadClassI();
 		tci.start();
+//		tci.join();
 		
 		for(int i = 0; i < 6; i++){
 			System.out.println("Main Thread...");
