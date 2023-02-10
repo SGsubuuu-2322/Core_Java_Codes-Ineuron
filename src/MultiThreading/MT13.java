@@ -4,7 +4,7 @@ public class MT13 {
 
 	public static void main(String[] args) {
 		
-		Thread t = new Thread(
+	 Thread t = new Thread(
 				new Runnable(){
 					@Override
 					public void run(){
@@ -13,8 +13,10 @@ public class MT13 {
 					}
 				}
 				);
+	 
+	 t.start();
 		
-		t.start();
+
 		
 		System.out.println("Hello I'm Main Thread...");
 
