@@ -1,7 +1,7 @@
 package MultiThreading;
 
 
-class ThreadClassI extends Thread{
+class ThreadClass123 extends Thread{
 	static Thread th;
 	
 	@Override
@@ -22,9 +22,9 @@ class ThreadClassI extends Thread{
 public class MT7 {
 
 	public static void main(String[] args) throws InterruptedException  {
-		ThreadClassI.th = Thread.currentThread();
+		ThreadClass123.th = Thread.currentThread();
 		
-		ThreadClassI tci = new ThreadClassI();
+		ThreadClass123 tci = new ThreadClass123();
 		tci.start();
 //		tci.join();
 		
