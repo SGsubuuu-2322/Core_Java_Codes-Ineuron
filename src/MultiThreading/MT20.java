@@ -35,7 +35,7 @@ class ThreadClass extends Thread{
 	
 	@Override 
 	public void run(){
-		dw.wishDish(name);
+		   dw.wishDish(name);
 	}
 }
 
