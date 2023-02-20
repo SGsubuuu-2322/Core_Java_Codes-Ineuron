@@ -1,10 +1,10 @@
 package MultiThreading;
 
-class BThread{
+class BThreaD1{
 	
 	public void bThread(String name){
 		
-		synchronized(this){
+		synchronized(BThreaD1.class){
 			System.out.println(Thread.currentThread().getName() + " AKA " + name +  " Gets the lock of this synchronized block...");
 			
 			for(int i = 0; i < 5; i++){
@@ -22,10 +22,10 @@ class BThread{
 	
 }
 
-class EThread extends Thread{
+class EThreaD1 extends Thread{
 	String name;
-	BThread bt;
-	public EThread(String name, BThread bt){
+	BThreaD1 bt;
+	public EThreaD1(String name, BThreaD1 bt){
 		this.name = name;
 		this.bt = bt;
 	}
@@ -36,14 +36,16 @@ class EThread extends Thread{
 	}
 }
 
-public class MT21 {
 
+public class MT22 {
+
+	
 	public static void main(String[] args) {
-		BThread bt1 = new BThread();
-		BThread bt2 = new BThread();
+		BThreaD1 bt1 = new BThreaD1();
+		BThreaD1 bt2 = new BThreaD1();
 		
-		EThread et1 = new EThread("SGsubuuu", bt1);
-		EThread et2 = new EThread("GSgituuu", bt2);
+		EThreaD1 et1 = new EThreaD1("SGsubuuu", bt1);
+		EThreaD1 et2 = new EThreaD1("GSgituuu", bt2);
 		
 		et1.start();
 		et2.start();
@@ -51,5 +53,5 @@ public class MT21 {
 		System.out.println("Hey All!!! I'm the good damm Main Method....");
 
 	}
-
+	
 }
