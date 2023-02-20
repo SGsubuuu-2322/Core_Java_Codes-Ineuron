@@ -3,9 +3,10 @@ package Default_Package;
 class BThread{
 	
 	public void bThread(String name){
-		System.out.println("Mr./Mrs." + name + " gets running...");
 		
+		System.out.println("Mr./Mrs." + Thread.currentThread().getName() + " : " + name + " gets Touched.....:):):)");
 		synchronized(this){
+			System.out.println("Mr./Mrs." + Thread.currentThread().getName() + " : " + name + " gets running:):):)");
 			for(int i = 0; i < 5; i++){
 				System.out.println("Mr./Mrs." + name + " gets hold of the lock of this synchronized block...");
 				try {
