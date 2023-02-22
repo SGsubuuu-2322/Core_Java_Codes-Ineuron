@@ -50,7 +50,7 @@ class Thread3 extends Thread{
 				total += i;
 			}
 			
-			this.notifyAll();
+			this.notify();
 		}
 	}
 	
